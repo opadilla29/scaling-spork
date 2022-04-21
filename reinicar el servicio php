@@ -1,0 +1,11 @@
+Reiniciar el servicio php7.4-fpm
+
+Para aplicar cualquier modificación realizada al fichero de configuración debe reiniciar el servidor con el siguiente comando:
+
+$ sudo systemctl restart php7.4-fpm.service
+
+Refrescar configuraciones
+
+Es preferible usar el siguiente comando para refrescar las configuraciónes ya que el servicio recargará las configuraciones sin perder las conexiones.
+
+$ sudo systemctl reload php7.4-fpm.service
